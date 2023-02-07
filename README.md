@@ -3,6 +3,9 @@
 #S - Single Responsibility Principle
 A class should have one and only one reason to change, meaning that a class should have only one job.
 
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/srp-incorrect.png?raw=true)
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/srp-correct.png?raw=true)
+
 #O - Open & Closed Principle
 Objects or entities should be open for extension but closed for modification
 
