@@ -20,7 +20,7 @@ public class InstagramService extends SocialMediaService {
 
 	@Override
 	public void groupCall(String... users) {
-		// Not Supported
+		throw new UnsupportedOperationException("Unsupported feature by Instagram");
 	}
 
 }

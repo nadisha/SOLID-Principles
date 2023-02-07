@@ -10,7 +10,7 @@ public class WhatsAppService extends SocialMediaService {
 
 	@Override
 	public void publishPost() {
-		// Not Supported		
+		throw new UnsupportedOperationException("Unsupported feature by WhatsApp");		
 	}
 
 	@Override

@@ -18,8 +18,14 @@ Objects or entities should be open for extension but closed for modification
 ### After
 ![alt text](https://github.com/nadisha/SOLID-principles/blob/main/ocp-correct.png?raw=true)
 
-#L - Leskov's Substitution Principle
+## L - Leskov's Substitution Principle
 Subclasses should be substitutable for their base classes.
+
+### Before
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/lsp-incorrect.png?raw=true)
+
+### After
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/lsp-correct.png?raw=true)
 
 #I - Interface Segregation Principle
 Separating the interfaces. Many client-specific interfaces are better than once general-purpose interface. Client should not be forced to implement a function they do no need.
