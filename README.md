@@ -9,8 +9,14 @@ A class should have one and only one reason to change, meaning that a class shou
 ### After
 ![alt text](https://github.com/nadisha/SOLID-principles/blob/main/srp-correct.png?raw=true)
 
-#O - Open & Closed Principle
+## O - Open & Closed Principle
 Objects or entities should be open for extension but closed for modification
+
+### Before
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/ocp-incorrect.png?raw=true)
+
+### After
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/ocp-correct.png?raw=true)
 
 #L - Leskov's Substitution Principle
 Subclasses should be substitutable for their base classes.
