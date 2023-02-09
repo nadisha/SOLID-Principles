@@ -27,8 +27,14 @@ Subclasses should be substitutable for their base classes.
 ### After
 ![alt text](https://github.com/nadisha/SOLID-principles/blob/main/lsp-correct.png?raw=true)
 
-#I - Interface Segregation Principle
+## I - Interface Segregation Principle
 Separating the interfaces. Many client-specific interfaces are better than once general-purpose interface. Client should not be forced to implement a function they do no need.
+
+### Before
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/isp-incorrect.png?raw=true)
+
+### After
+![alt text](https://github.com/nadisha/SOLID-principles/blob/main/isp-correct.png?raw=true)
 
 #D - Dependency Inversion Principle
 Entities must depend on abstractions, not on concretions. The high-level module must not depend on the low-level module, but both should depend on abstractions.

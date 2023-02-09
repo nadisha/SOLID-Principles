@@ -4,15 +4,28 @@ import java.util.List;
 
 public interface PaymentService {
 
-	// Bank Payment Operations
+	/*
+	 * This is a bank payment operation, but not a loan payment operation
+	 */
     void initiatePayments();
     
+	/*
+	 * This is a bank and loan payment operation
+	 */    
     Object status();
     
+	/*
+	 * This is a bank and loan payment operation
+	 */    
     List<Object> getPayments();
     
-    // Loan Payment Operations
+	/*
+	 * This is a loan payment operation, but not a bank payment operation
+	 */
     void intiateLoanSettlement();
     
+	/*
+	 * This is a loan payment operation, but not a bank payment operation
+	 */
     void initiateRePayment();    
 }

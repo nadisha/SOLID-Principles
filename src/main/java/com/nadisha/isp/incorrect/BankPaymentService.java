@@ -23,12 +23,12 @@ public class BankPaymentService implements PaymentService {
 
 	@Override
 	public void intiateLoanSettlement() {
-		throw new UnsupportedOperationException("This is not a loan payment");
+		throw new UnsupportedOperationException("This is not a bank payment");
 	}
 
 	@Override
 	public void initiateRePayment() {
-		throw new UnsupportedOperationException("This is not a loan payment");
+		throw new UnsupportedOperationException("This is not a bank payment");
 	}
 
 }
