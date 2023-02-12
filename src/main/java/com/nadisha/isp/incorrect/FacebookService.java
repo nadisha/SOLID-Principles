@@ -1,4 +1,4 @@
-package com.nadisha.lsp.incorrect;
+package com.nadisha.isp.incorrect;
 
 // FacebookService is a substitute of SocialMediaService
 public class FacebookService extends SocialMediaService {

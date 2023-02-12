@@ -3,24 +3,27 @@ package com.nadisha.lsp.incorrect;
 public class Client {
 
 	public static void main(String[] args) {
-		SocialMediaService facebook = new FacebookService();
-		SocialMediaService instagram = new InstagramService();
-		SocialMediaService whatsapp = new WhatsAppService();
-
-		facebook.chat();
-		facebook.publishPost();
-		facebook.sendPhotos();
-		facebook.groupCall("Jane", "Simon");
+		PaymentService bankPaymentService = new BankPaymentService();
 		
-		instagram.chat();
-		instagram.publishPost();
-		instagram.sendPhotos();
-		instagram.groupCall("Jane", "Simon"); // not supported
+		// Bank Payment Operations
+		bankPaymentService.getPayments();
+		bankPaymentService.status();
+		bankPaymentService.initiatePayments();
 		
-		whatsapp.chat();
-		whatsapp.publishPost(); // not supported
-		whatsapp.sendPhotos();
-		whatsapp.groupCall("Jane", "Simon");
+		// Unsupported operations by the bank service
+		bankPaymentService.intiateLoanSettlement();
+		bankPaymentService.initiateRePayment();
+		
+		PaymentService loanPaymentService = new LoanPaymentService();
+		
+		// Unsupported operations by the loan service
+		loanPaymentService.getPayments();
+		loanPaymentService.status();
+		loanPaymentService.initiatePayments();
+		
+		// Loan Payment Operations
+		loanPaymentService.intiateLoanSettlement();
+		loanPaymentService.initiateRePayment();
 	}
 
 }

@@ -3,7 +3,7 @@ package com.nadisha.dip.correct;
 public class Client {
 
 	public static void main(String[] args) {
-		BankCardService service = new DebitCardService();
+		BankCardService service = new CreditCardService();
 		
 		ShoppingMallService shopping = new ShoppingMallService(service);
 		

@@ -1,8 +1,13 @@
-package com.nadisha.isp.correct;
+package com.nadisha.lsp.incorrect;
 
 import java.util.List;
 
-public class LoanPaymentService implements LoanService {
+public class LoanPaymentService implements PaymentService {
+
+	@Override
+	public void initiatePayments() {
+		throw new UnsupportedOperationException("This is not a loan payment");
+	}
 
 	@Override
 	public Object status() {
@@ -18,12 +23,13 @@ public class LoanPaymentService implements LoanService {
 
 	@Override
 	public void intiateLoanSettlement() {
-		System.out.println("Settle initial load payment.");			
+		System.out.println("Settle initial load payment.");		
 	}
 
 	@Override
 	public void initiateRePayment() {
-		System.out.println("Initiate loan re payments.");		
+		System.out.println("Initiate loan re payments.");
+		
 	}
 
 }

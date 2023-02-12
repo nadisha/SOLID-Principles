@@ -1,4 +1,4 @@
-package com.nadisha.lsp.correct;
+package com.nadisha.isp.correct;
 
 public interface SocialMediaPostService {
 	// Support Facebook and Instagram

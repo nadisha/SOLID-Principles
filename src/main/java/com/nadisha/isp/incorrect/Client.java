@@ -3,27 +3,24 @@ package com.nadisha.isp.incorrect;
 public class Client {
 
 	public static void main(String[] args) {
-		PaymentService bankPaymentService = new BankPaymentService();
+		SocialMediaService facebook = new FacebookService();
+		SocialMediaService instagram = new InstagramService();
+		SocialMediaService whatsapp = new WhatsAppService();
+
+		facebook.chat();
+		facebook.publishPost();
+		facebook.sendPhotos();
+		facebook.groupCall("Jane", "Simon");
 		
-		// Bank Payment Operations
-		bankPaymentService.getPayments();
-		bankPaymentService.status();
-		bankPaymentService.initiatePayments();
+		instagram.chat();
+		instagram.publishPost();
+		instagram.sendPhotos();
+		instagram.groupCall("Jane", "Simon"); // not supported
 		
-		// Unsupported operations by the bank service
-		bankPaymentService.intiateLoanSettlement();
-		bankPaymentService.initiateRePayment();
-		
-		PaymentService loanPaymentService = new LoanPaymentService();
-		
-		// Unsupported operations by the loan service
-		loanPaymentService.getPayments();
-		loanPaymentService.status();
-		loanPaymentService.initiatePayments();
-		
-		// Loan Payment Operations
-		loanPaymentService.intiateLoanSettlement();
-		loanPaymentService.initiateRePayment();
+		whatsapp.chat();
+		whatsapp.publishPost(); // not supported
+		whatsapp.sendPhotos();
+		whatsapp.groupCall("Jane", "Simon");
 	}
 
 }

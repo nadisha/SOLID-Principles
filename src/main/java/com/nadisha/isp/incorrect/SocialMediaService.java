@@ -1,4 +1,4 @@
-package com.nadisha.lsp.incorrect;
+package com.nadisha.isp.incorrect;
 
 public abstract class SocialMediaService {
 	

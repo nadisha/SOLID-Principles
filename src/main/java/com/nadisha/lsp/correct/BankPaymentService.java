@@ -1,4 +1,4 @@
-package com.nadisha.isp.correct;
+package com.nadisha.lsp.correct;
 
 import java.util.List;
 

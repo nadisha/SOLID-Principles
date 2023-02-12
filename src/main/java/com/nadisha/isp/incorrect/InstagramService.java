@@ -1,4 +1,4 @@
-package com.nadisha.lsp.incorrect;
+package com.nadisha.isp.incorrect;
 
 //InstagramService is not a substitute of SocialMediaService
 public class InstagramService extends SocialMediaService {

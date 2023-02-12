@@ -3,22 +3,17 @@ package com.nadisha.lsp.correct;
 public class Client {
 
 	public static void main(String[] args) {
-		FacebookService facebook = new FacebookService();
-		InstagramService instagram = new InstagramService();
-		WhatsAppService whatsapp = new WhatsAppService();
+		BankService bankService = new BankPaymentService();
+		bankService.initiatePayments();
+		bankService.status();
+		bankService.getPayments();
+
+		LoanService loanService = new LoanPaymentService();
+		loanService.status();
+		loanService.getPayments();
+		loanService.intiateLoanSettlement();
+		loanService.initiateRePayment();
 		
-		facebook.chat();
-		facebook.publishPost();
-		facebook.sendPhotos();
-		facebook.groupCall("Jane", "Simon");
-		
-		instagram.chat();
-		instagram.publishPost();
-		instagram.sendPhotos();
-		
-		whatsapp.chat();
-		whatsapp.sendPhotos();
-		whatsapp.groupCall("Jane", "Simon");
 	}
 
 }

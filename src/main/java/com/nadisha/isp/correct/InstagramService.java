@@ -1,4 +1,4 @@
-package com.nadisha.lsp.correct;
+package com.nadisha.isp.correct;
 
 //InstagramService is a substitute of SocialMediaService and SocialMediaPostService
 public class InstagramService implements SocialMediaService, SocialMediaPostService{

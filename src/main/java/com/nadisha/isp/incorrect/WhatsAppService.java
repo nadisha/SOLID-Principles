@@ -1,11 +1,16 @@
-package com.nadisha.lsp.correct;
+package com.nadisha.isp.incorrect;
 
-//WhatsAppService is a substitute of SocialMediaService and SocialMediaCallService
-public class WhatsAppService implements SocialMediaService, SocialMediaCallService{
+//WhatsAppService is not a substitute of SocialMediaService
+public class WhatsAppService extends SocialMediaService {
 
 	@Override
 	public void chat() {
 		System.out.println("WhatsApp can use to chat");
+	}
+
+	@Override
+	public void publishPost() {
+		throw new UnsupportedOperationException("Unsupported feature by WhatsApp");		
 	}
 
 	@Override
